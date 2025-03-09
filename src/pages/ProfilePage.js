@@ -81,7 +81,7 @@ const ProfilePage = () => {
 
     axios
       .patch(
-        `https://bookworm-backend-api.onrender.com/updateBook/${bookId}`,
+        `https://bookworm-backend-api.onrender.com/books/updateBook/${bookId}`,
         {
           title: newTitle,
           author: newAuthor,
