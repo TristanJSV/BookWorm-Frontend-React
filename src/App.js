@@ -38,7 +38,7 @@ function App() {
     }
 
     axios
-      .get("http://localhost:4000/users/details", {
+      .get("https://bookworm-backend-api.onrender.com/users/details", {
         headers: {
           "Content-Type": "application/json",
           Authorization: `Bearer ${token}`,

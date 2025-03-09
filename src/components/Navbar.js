@@ -127,7 +127,7 @@ const Navbar = () => {
                     href="#"
                     class="block py-2 px-3 md:p-0 text-gray-800 hover:text-teal-600 rounded"
                   >
-                    Blog
+                    Books
                   </Link>
                 </li>
                 <li>
