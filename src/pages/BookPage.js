@@ -14,7 +14,7 @@ const BookPage = () => {
   // Fetch all books when the page loads
   useEffect(() => {
     axios
-      .get("http://localhost:4000/books/getAllBooks")
+      .get("https://bookworm-backend-api.onrender.com/books/getAllBooks")
       .then((response) => {
         setAllBooks(response.data);
         setFilteredBooks(response.data); // Initially show all books

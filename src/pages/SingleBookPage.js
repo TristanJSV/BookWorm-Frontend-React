@@ -26,7 +26,7 @@ const SingleBookPage = () => {
 
   const fetchBook = () => {
     axios
-      .get(`http://localhost:4000/books/getBook/${bookId}`)
+      .get(`https://bookworm-backend-api.onrender.com/books/getBook/${bookId}`)
       .then((response) => {
         setTitle(response.data.title);
         setAuthor(response.data.author);

@@ -19,7 +19,7 @@ const AdminView = ({ books }) => {
     let token = localStorage.getItem("token");
 
     axios
-      .delete(`http://localhost:4000/books/deleteBook/${bookId}`, {
+      .delete(`https://bookworm-backend-api.onrender.com/deleteBook/${bookId}`, {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((response) => {

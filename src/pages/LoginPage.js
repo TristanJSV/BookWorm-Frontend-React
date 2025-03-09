@@ -18,7 +18,7 @@ const LoginPage = () => {
     e.preventDefault();
 
     axios
-      .post("http://localhost:4000/users/login", {
+      .post("https://bookworm-backend-api.onrender.com/users/login", {
         email: email,
         password: password,
       })
@@ -39,7 +39,7 @@ const LoginPage = () => {
 
   const retrieveUserId = (token) => {
     axios
-      .get("http://localhost:4000/users/details", {
+      .get("https://bookworm-backend-api.onrender.com/users/details", {
         headers: {
           Authorization: `Bearer ${token}`,
         },

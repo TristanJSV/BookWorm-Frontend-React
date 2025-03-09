@@ -42,7 +42,7 @@ const RegisterPage = () => {
     if (isValid) {
       axios
         .post(
-          "http://localhost:4000/users/register",
+          "https://bookworm-backend-api.onrender.com/users/register",
           {
             email: email,
             username: username,

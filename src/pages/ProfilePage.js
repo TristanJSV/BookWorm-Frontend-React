@@ -49,7 +49,7 @@ const ProfilePage = () => {
 
     axios
       .post(
-        "http://localhost:4000/books/addBook",
+        "https://bookworm-backend-api.onrender.com/books/addBook",
         {
           title: title,
           author: author,
@@ -81,7 +81,7 @@ const ProfilePage = () => {
 
     axios
       .patch(
-        `http://localhost:4000/books/updateBook/${bookId}`,
+        `https://bookworm-backend-api.onrender.com/updateBook/${bookId}`,
         {
           title: newTitle,
           author: newAuthor,
@@ -111,7 +111,7 @@ const ProfilePage = () => {
     let token = localStorage.getItem("token");
 
     axios
-      .get("http://localhost:4000/books/getMyBook", {
+      .get("https://bookworm-backend-api.onrender.com/books/getMyBook", {
         headers: {
           "Content-Type": "application/json",
           Authorization: `Bearer ${token}`,
